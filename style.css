@@ -1,158 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    /* border: 2px solid white; */
+margin:0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+font-family: 'Roboto', sans-serif;
 }
 
 :root{
-    --bg-header: #ff4552fe;
-    --bg-body: #ffffff ;
+  --color-primario:  rgb(88, 66, 255);
+  --color-logo:  rgb(255, 255, 255);
 }
 
-body{
-    background-color: var(--bg-body);
-    height: 100vh;
-
-
-}
 .header{
-    display: flex;
-    background-color: var(--bg-header);
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 50px;
+height: 60px;
+background-color: var(--color-primario);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 40px;
 }
 
-.header h2{
-    color: #1e1e1e;
+.header_logo{
+  color: var(--color-logo);
+  letter-spacing: 5px;
 }
 
-.nav_links{
-    display: flex;
-    gap: 50px;
+.nav{
+  /* width: 50%; */
+  /* background-color: yellow; */
 }
 
-li{
-  
-    padding: 7px 5px;
+.nav ul{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 50px;
 }
-
-.nav_items:hover{
-    background-color: var(--bg-body);
-    padding: 7px 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 
 .nav_items a{
-    color:#1e1e1e;
+  color: #fff;
+}
+.nav_items:hover{
+  text-decoration: underline;
+}
+
+/** secciones  */
+
+
+.hero{
+  /* background-color: coral; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_card{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(17, 17, 17);
+  text-align: center;
+  gap: 50px;
 
 }
 
-button:hover{
-    cursor: pointer;
-    background-color: var(--bg-body);
-    color: #1e1e1e;
-}
-button{
-    border: none;
-    padding: 7px 10px;
-    background-color: #1e1e1e;
-    color: var(--bg-body);
-    border-radius: 5px;
+.hero_img{
+  width: 100%;
+  height: 100%;
 }
 
-/* seccion  */
-
-.section{
-     width: 90%;
-     margin: 0 auto;
-     min-height: 100vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     gap: 70px;
-     padding: 20px 0px;
- }
- .section_card{
-     display: flex;
-     gap: 10px;
-     justify-content: center;
-     align-items: center;
-     width: 90%;
-    height: 100%;
-    margin-top: 30px;
-    line-height: 30px;
-
-     
- }
- 
- .card_text{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     max-width: 400px;
-     gap: 20px;
- }
-
- .card_text p{
-     text-align: center;
- }
-
- .card_botones{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 40px;
-
- }
-
- .card_botones a{
-    box-shadow: 1px 7px 13px -1px rgba(0,0,0,0.55);
-     padding: 5px 20px;
-     border-radius: 5px;
-        max-width: 150px;
-        min-width: 150px;
-     text-align: center;
-    
- }
-
- .info{
-     background-color: #1e1e1e;
-     color: #fff;
- }
-.proyectos{
-    outline: 3px solid  #ff4552fe;
-    color: #1e1e1e;
-   
+.hero_img img{
+  width: 100%;
+  height: 100%;
 }
 
- figure .card_img{
-     width: 400px;
- }
-
-.section_info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 100%;
- 
+.hero_texts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
 }
- 
+.hero_btns{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
 
-
-.info_paragraph{
-    text-align: center;
-    line-height: 30px;
-   
+.mensaje, .compartir{
+  color: #1e1e1e;
+  width: 100%;
+  border-radius: 10px;
+  padding:5px 0px;
 
 }
 
+.mensaje{
+  background-color: var(--color-primario);
+  color: #fff;
+}
+.compartir{
+ outline: 2px solid #1e1e1e;
+}
+
+/** seccion 2  */
+
+.hero_text{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.container_paragraph{
+  width: 50%;
+}
+
+span{
+  color: var(--color-primario);
+}
+
+.text_paragraph{
+  text-align: center;
+  line-height: 40px;
+ color: var(--color-primario);
+ font-size: 22px;
+ width: 100%;
+}
